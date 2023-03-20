@@ -11,7 +11,9 @@ int main() {
     cout << haslo << endl << dlugosc << endl;
     cout << "Ascii: " << endl;
     for (int a = 0; a < dlugosc; a++) {
-      cout << (int)haslo[a] << " " << haslo[a] << endl;
+      char nowe = haslo[a] - dlugosc;
+      cout << (int)haslo[a] << " " << haslo[a] << " " << (int)haslo[a] - dlugosc
+           << " " << nowe << endl;
     }
   }
   plik.close();
