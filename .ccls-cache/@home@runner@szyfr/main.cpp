@@ -7,7 +7,8 @@ int main() {
   ifstream plik("tekst.txt");
   char haslo[35];
   while (plik >> haslo) {
-    cout << haslo << endl;
+    int dlugosc = string(haslo).length();
+    cout << haslo << endl << dlugosc << endl;
   }
   plik.close();
   return 0;
